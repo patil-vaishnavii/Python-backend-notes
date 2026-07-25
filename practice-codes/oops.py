@@ -1,3 +1,4 @@
+#example of student management system
 class Student:
   def __init__(self,name,roll,marks):
     self.name = name
