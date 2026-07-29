@@ -1,4 +1,4 @@
-````markdown
+
 # Django Authentication Notes
 
 ## What is Authentication?
@@ -831,17 +831,3 @@ Home
 
 ---
 
-## Next Step
-
-After understanding these concepts, build the authentication project from scratch by creating:
-
-- `urls.py`
-- `views.py`
-- HTML templates
-- Registration form
-- Login form
-- Logout functionality
-- Protected Dashboard
-
-This project covers **70–80% of the authentication concepts** used in real-world Django applications.
-````
