@@ -18,3 +18,45 @@
         ↓
 9. Session is destroyed
 ```
+## For Login page
+```
+User clicks Login
+        │
+        ▼
+login URL
+        │
+        ▼
+authenticate()
+        │
+        ▼
+login()
+        │
+        ▼
+Session Created
+        │
+        ▼
+request.user
+```
+
+## For Sign up page
+```
+User clicks Sign Up
+        │
+        ▼
+register URL
+        │
+        ▼
+register_view()
+        │
+        ▼
+UserCreationForm
+        │
+        ▼
+Validate data
+        │
+        ▼
+Create User object
+        │
+        ▼
+Save into database
+```
