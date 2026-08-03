@@ -584,3 +584,46 @@ DATABASE
 **Migrations record the database changes.**
 
 **The database stores the result.**
+
+# Django Model / ORM Common Methods
+
+| Method                    | Use                                                       |
+| ------------------------- | --------------------------------------------------------- |
+| `Model.objects.create()`  | Creates and saves a new database object.                  |
+| `Model.objects.get()`     | Retrieves exactly one object matching the condition.      |
+| `Model.objects.filter()`  | Retrieves all objects matching the condition.             |
+| `Model.objects.all()`     | Retrieves all objects from the model's table.             |
+| `Model.objects.exclude()` | Retrieves objects that do not match the condition.        |
+| `Model.objects.first()`   | Returns the first object from the QuerySet.               |
+| `Model.objects.last()`    | Returns the last object from the QuerySet.                |
+| `Model.objects.count()`   | Returns the number of objects matching the QuerySet.      |
+| `Model.objects.exists()`  | Checks whether at least one matching object exists.       |
+| `object.save()`           | Saves a new or modified object to the database.           |
+| `object.delete()`         | Deletes the object from the database.                     |
+| `get_object_or_404()`     | Gets an object or returns a 404 page if it doesn't exist. |
+
+## Most Important for NotesApp
+
+```python
+Note.objects.create(...)
+```
+
+Creates a new note.
+
+```python
+Note.objects.filter(user=request.user)
+```
+
+Gets notes belonging to the logged-in user.
+
+```python
+note.save()
+```
+
+Saves changes made to an existing note.
+
+```python
+note.delete()
+```
+
+Deletes an existing note.
